@@ -10,13 +10,23 @@ a:hover {
 }
 
 /* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
+.btn-default {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #ED7151;
+}
+.btn-default:hover {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #ED7151;
+  border: 1px solid #ED7151;
+}
+.btn-default:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #ED7151;
+  border: 1px solid #ED7151;
 }
 
 
@@ -32,11 +42,10 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 body {
   background-image: url("../img/stars.svg");
-  
+
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -65,6 +74,9 @@ body {
 /*
  * Header
  */
+.masthead {
+   background-color: #3B3B3B;
+}
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -130,10 +142,37 @@ body {
   color: rgba(255,255,255,.5);
 }
 
+/* _________ Mobile view _________  */
+.form {
+  height: 600px;
+  width: 350px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 50px 17px rgba(0,0,0,0.50);
+  margin-bottom: 200px;
+}
+
+h1.tagline {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+p.form-text {
+  color: #3B3B3B;
+  font-size: 24px;
+  padding-top: 50px;
+  font-weight: 800;
+}
+
 
 /*
  * Affix and center
  */
+
+ /* _________ Phablet _________  */
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
@@ -155,7 +194,34 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
-}
+
+.form {
+  height: 600px;
+  width: 450px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 50px 17px rgba(0,0,0,0.50);
+  margin-bottom: 200px;
+  }
+
+h1.tagline {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  font-size: 60px;
+  font-weight: 900;
+  }
+
+p.form-text {
+  color: #3B3B3B;
+  font-size: 24px;
+  padding-top: 50px;
+  font-weight: 800;
+  }
+
+
+
+/* _________ Desktop _________  */
 
 @media (min-width: 992px) {
   .masthead,
@@ -163,4 +229,19 @@ body {
   .cover-container {
     width: 700px;
   }
+
+  h1.tagline {
+  font-size: 80px;
 }
+
+.form {
+  height: 600px;
+  width: 450px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 50px 17px rgba(0,0,0,0.50);
+  margin-bottom: 200px;
+}
+}
+
