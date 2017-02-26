@@ -74,9 +74,7 @@ body {
 /*
  * Header
  */
-.masthead {
-   background-color: #3B3B3B;
-}
+
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -156,8 +154,11 @@ body {
 h1.tagline {
   padding-top: 25px;
   padding-bottom: 50px;
-  font-size: 45px;
+  font-size: 34px;
   font-weight: 900;
+  font-family: OpenSans-Extrabold;
+  letter-spacing: 0;
+
 }
 
 p.form-text {
@@ -167,6 +168,9 @@ p.form-text {
   font-weight: 800;
 }
 
+.form-question {
+  color: #3B3B3B;
+}
 
 /*
  * Affix and center
@@ -177,7 +181,7 @@ p.form-text {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
   }
   .mastfoot {
@@ -198,16 +202,10 @@ p.form-text {
 .form {
   height: 600px;
   width: 450px;
-  background-color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 50px 17px rgba(0,0,0,0.50);
-  margin-bottom: 200px;
   }
 
 h1.tagline {
-  padding-top: 150px;
-  padding-bottom: 50px;
+  padding-top: 80px;
   font-size: 60px;
   font-weight: 900;
   }
@@ -216,6 +214,7 @@ p.form-text {
   color: #3B3B3B;
   font-size: 24px;
   padding-top: 50px;
+  padding-bottom: 25px;
   font-weight: 800;
   }
 
@@ -231,17 +230,12 @@ p.form-text {
   }
 
   h1.tagline {
-  font-size: 80px;
-}
+  font-size: 64px;
+  }
 
 .form {
   height: 600px;
   width: 450px;
-  background-color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 50px 17px rgba(0,0,0,0.50);
-  margin-bottom: 200px;
-}
+  }
 }
 
